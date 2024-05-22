@@ -1,0 +1,89 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/br_serverselect_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr">
+
+    <ImageView
+        android:id="@+id/image_bg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintDimensionRatio="H,16:9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/launcher_downloader_bg" />
+
+    <TextView
+        android:id="@+id/tv_play_black"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Persian RolePlay"
+        android:textColor="#FFCDD2"
+        android:textSize="18.0sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/progress_bar"
+        app:layout_constraintTop_toTopOf="@+id/loading_text" />
+
+    <ImageView
+        android:id="@+id/iv_smile"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="4dp"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_play_black"
+        app:layout_constraintStart_toEndOf="@+id/tv_play_black"
+        android:tint="#FFCDD2"
+        tools:ignore="UseAppTint" />
+
+    <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_5sdp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rcBackgroundColor="#839FA8DA"
+        app:rcBackgroundPadding="0dp"
+        app:rcMax="100.0"
+        app:rcProgress="0.0"
+        app:rcProgressColor="#D1C4E9"
+        app:rcRadius="@dimen/_3sdp"
+        app:rcReverse="false"
+        app:rcSecondaryProgress="0.0"
+        app:rcSecondaryProgressColor="#5C6BC0" />
+
+    <TextView
+        android:id="@+id/loading_text"
+        style="@style/MontserratRegular14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="درحال بارگزاری بازی..."
+        android:textColor="#5C6BC0"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/progress_bar"
+        app:layout_constraintEnd_toEndOf="@+id/progress_bar" />
+
+    <TextView
+        android:id="@+id/loading_percent"
+        style="@style/MontserratRegular14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#311B92"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/progress_bar"
+        app:layout_constraintEnd_toEndOf="@+id/progress_bar"
+        app:layout_constraintStart_toStartOf="@+id/progress_bar"
+        app:layout_constraintTop_toTopOf="@+id/progress_bar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

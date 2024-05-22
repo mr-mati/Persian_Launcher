@@ -1,0 +1,6 @@
+<inset xmlns:android="http://schemas.android.com/apk/res/android" android:insetLeft="0.0dip" android:insetRight="0.0dip" android:insetTop="0.0dip" android:insetBottom="0.0dip">
+    <shape android:shape="rectangle">
+        <gradient android:startColor="#2B2D30" android:endColor="#FE2141" android:angle="45.0" android:centerX="79.99999%" android:centerColor="#1E1F22"/>
+        <corners android:radius="@dimen/_12sdp"/>
+    </shape>
+</inset>

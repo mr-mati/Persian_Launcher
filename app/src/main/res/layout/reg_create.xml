@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout4reg"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/registration_back"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="295dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/reg_field_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView3333"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:drawableLeft="@drawable/reg_back_icon"
+        android:drawablePadding="2.0dip"
+        android:fontFamily="@font/montserrat_regular"
+        android:gravity="center_vertical"
+        android:text="برگشت"
+        android:textColor="#ff848ba2"
+        android:textSize="12.0sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/play_but222"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@id/password_enter2"
+        android:layout_width="246dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="115dp"
+        android:background="@drawable/reg_field"
+        android:ems="10"
+        android:fontFamily="@font/montserrat_regular"
+        android:gravity="center"
+        android:hint="کلمه عبور"
+        android:imeOptions="actionSend|flagNoExtractUi|flagNoFullscreen"
+        android:inputType="textPassword"
+        android:longClickable="true"
+        android:maxLength="16"
+        android:paddingLeft="14.0dip"
+        android:paddingRight="14.0dip"
+        android:singleLine="true"
+        android:textColor="#ffffffff"
+        android:textColorHint="#ff8a92aa"
+        android:textSize="11.0sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/view4"
+        app:layout_constraintStart_toEndOf="@+id/imageView19"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/password_enter3"
+        android:layout_width="246dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/reg_field"
+        android:ems="10"
+        android:fontFamily="@font/montserrat_regular"
+        android:gravity="center"
+        android:hint="تکرار رمز عبور"
+        android:imeOptions="actionSend|flagNoExtractUi|flagNoFullscreen"
+        android:inputType="textPassword"
+        android:longClickable="true"
+        android:maxLength="16"
+        android:paddingLeft="14.0dip"
+        android:paddingRight="14.0dip"
+        android:singleLine="true"
+        android:textColor="#ffffffff"
+        android:textColorHint="#ff8a92aa"
+        android:textSize="11.0sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/password_enter2"
+        app:layout_constraintHorizontal_bias="0.397"
+        app:layout_constraintStart_toStartOf="@+id/password_enter2"
+        app:layout_constraintTop_toBottomOf="@+id/password_enter2" />
+
+
+    <Button
+        android:id="@id/play_but222"
+        android:layout_width="246dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/donate_tile_button"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="ثبت نام"
+        android:textColor="#ffffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView19"
+        app:layout_constraintTop_toBottomOf="@+id/password_enter3" />
+
+    <Button
+        android:id="@+id/play_but23"
+        android:layout_width="246dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/dialog_input_bg"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="پرش"
+        android:textColor="#ffffffff"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/play_but222"
+        app:layout_constraintStart_toStartOf="@+id/play_but222"
+        app:layout_constraintTop_toBottomOf="@+id/play_but222" />
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="8dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/as"
+        app:layout_constraintBottom_toBottomOf="@+id/view4"
+        app:layout_constraintEnd_toStartOf="@+id/view4"
+        app:layout_constraintTop_toTopOf="@+id/view4"
+        app:layout_constraintVertical_bias="0.487" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="252dp"
+        android:layout_height="257dp"
+        android:background="@drawable/person_art"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/montsserat_semibold"
+        android:text="ثبت نام"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="252dp"
+        android:layout_height="112dp"
+        android:background="@drawable/ref_bg"
+        android:fontFamily="@font/muller_medium"
+        android:gravity="top"
+        android:text="\n  برای شروع بازی، تمام فیلدها را پر کنید\n \n  •رمز عبور باید بین 6 تا 16 کاراکتر باشد\n \n  •رمز عبور به رجیستری حساس است"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/password_enter2"
+        app:layout_constraintEnd_toStartOf="@+id/textView3333"
+        app:layout_constraintStart_toStartOf="@+id/textView9999"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="80dp"
+        android:layout_height="5dp"
+        android:layout_marginBottom="16dp"
+        android:background="#E80000"
+        app:layout_constraintBottom_toTopOf="@+id/imageView20"
+        app:layout_constraintEnd_toEndOf="@+id/imageView20"
+        app:layout_constraintStart_toStartOf="@+id/imageView20" />
+
+    <TextView
+        android:id="@+id/textView9999"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/muller_medium"
+        android:text="Mr_Mati"
+        android:textColor="#F5FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/view5"
+        app:layout_constraintEnd_toEndOf="@+id/view5"
+        app:layout_constraintStart_toStartOf="@+id/view5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

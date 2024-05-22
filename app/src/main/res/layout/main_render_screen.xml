@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_fl_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+    android:layoutDirection="ltr">
+
+    <SurfaceView
+        android:id="@+id/main_sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <FrameLayout
+        android:id="@+id/ui_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/main_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#1E1F22"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <Button
+                android:id="@+id/main_but_input_prev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:background="@drawable/keyboard_history_bg"
+                android:gravity="center"
+                android:minWidth="11dip"
+                android:minHeight="26dip"
+                android:text="&#x22C1;"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/main_but_input_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:background="@drawable/keyboard_history_bg"
+                android:gravity="center"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:minWidth="11dip"
+                android:minHeight="26dip"
+                android:text="&#x22C0;"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <com.nvidia.devtech.CustomEditText
+                android:id="@+id/main_et_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="0.7"
+                android:paddingStart="8dp"
+                android:paddingEnd="4dp"
+                android:background="@drawable/keyboard_input_bg"
+                android:ems="10"
+                android:imeOptions="actionDone|flagNoExtractUi|flagNoFullscreen"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/main_but_input_slash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:backgroundTint="#90CAF9"
+                android:gravity="center"
+                android:minWidth="11dip"
+                android:minHeight="11dip"
+                android:text="/"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/exit_cinema"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|top"
+            android:layout_margin="8dp"
+            android:layout_weight="0.1"
+            android:backgroundTint="#1E1F22"
+            android:gravity="center"
+            android:minWidth="11dip"
+            android:minHeight="11dip"
+            android:text="خارج شدن"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/cinema_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="12dp"
+            android:alpha="0.7"
+            android:fontFamily="@font/montserrat_bolditalic"
+            android:text="Persian Mobile Cinematic"
+            android:textColor="#A8A8A8"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/dark_screen"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:alpha="0.0"
+            android:background="#ff000000"
+            android:visibility="visible" />
+
+        <include layout="@layout/bhud_layout" />
+
+        <include layout="@layout/chat_layout" />
+
+        <include layout="@layout/bspeed_layout" />
+
+        <include layout="@layout/menu_action_dialog" />
+
+        <include layout="@layout/radial_menu" />
+
+        <include layout="@layout/donate_screen" />
+
+        <include layout="@layout/donat_sc" />
+
+        <include layout="@layout/donate_podt" />
+
+        <include layout="@layout/window_dialog" />
+
+        <include layout="@layout/hassle_tab" />
+
+        <include layout="@layout/reg_create" />
+
+        <include layout="@layout/reg_create_sx" />
+
+        <include layout="@layout/reg_login" />
+
+        <include layout="@layout/br_serverselect" />
+
+        <!--Add Tag Mati
+        <TextView
+            android:id="@+id/smenishpidor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="1dp"
+            android:fontFamily="@font/montserrat_bolditalic"
+            android:text="by weikton x reytiz"
+            android:alpha="0.7"
+            android:textColor="#5c5c5c"
+            android:textSize="8sp" />-->
+    </FrameLayout>
+</FrameLayout>

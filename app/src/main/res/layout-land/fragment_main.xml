@@ -1,0 +1,210 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    android:background="@drawable/main_banner"
+    tools:context="com.mati.launcher.view.fragments.MainFragment">
+
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/banner_subinfo_bg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:src="@drawable/profile" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/UserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="UserName"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/frameLayout2"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout2" />
+
+
+    <Button
+        android:id="@+id/PlayGame"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/btn_start"
+        android:fontFamily="@font/iran_sans"
+        android:text="شروع"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/PlayGame"
+        app:layout_constraintStart_toStartOf="@+id/PlayGame">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AntiCheat : "
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Active"
+            android:textColor="@color/blue"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/setting"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/btn_items"
+        app:layout_constraintEnd_toStartOf="@+id/ping"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:src="@drawable/setting" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/shop"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/btn_items"
+        app:layout_constraintBottom_toBottomOf="@+id/setting"
+        app:layout_constraintEnd_toStartOf="@+id/setting"
+        app:layout_constraintTop_toTopOf="@+id/setting">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:src="@drawable/shop" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/website"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/btn_items"
+        app:layout_constraintBottom_toBottomOf="@+id/shop"
+        app:layout_constraintEnd_toStartOf="@+id/shop"
+        app:layout_constraintTop_toTopOf="@+id/shop">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_web" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/download"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/btn_items"
+        app:layout_constraintBottom_toBottomOf="@+id/website"
+        app:layout_constraintEnd_toStartOf="@+id/website"
+        app:layout_constraintTop_toTopOf="@+id/setting">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_download" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ping"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_margin="8dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/setting"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/setting">
+
+        <ImageView
+            android:id="@+id/ic_ping"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:src="@drawable/ic_wifi" />
+
+        <TextView
+            android:id="@+id/txt_ping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/iran_sans"
+            android:text="100"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/discord"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_margin="8dp"
+        android:src="@drawable/ic_discord"
+        app:layout_constraintBottom_toTopOf="@+id/PlayGame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ping" />
+
+    <ImageView
+        android:id="@+id/telegram"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_margin="8dp"
+        android:src="@drawable/ic_telegram"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/discord" />
+
+    <!--<androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/stories_recycler"
+        android:layout_width="300dp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_margin="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:itemCount="50"
+        tools:listitem="@layout/item_news" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

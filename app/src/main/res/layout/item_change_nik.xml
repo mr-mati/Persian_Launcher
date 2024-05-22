@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/_14sdp"
+    android:layout_marginRight="@dimen/_14sdp"
+    android:layoutDirection="ltr"
+    android:background="@drawable/dialog_background"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/_14sdp"
+    android:paddingTop="@dimen/_20sdp"
+    android:paddingRight="@dimen/_14sdp"
+    android:paddingBottom="@dimen/_20sdp">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/nik_rectangle2"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:padding="12.0dip"
+            android:src="@drawable/user1" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@color/transparent"
+            android:digits="abcdefghijklmnopqrstuvwxyz_ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:fontFamily="@font/pt_root_ui_regular"
+            android:gravity="center_vertical"
+            android:hint="نام مستعار خود را وارد کنید"
+            android:inputType="textCapSentences"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:paddingRight="@dimen/_10sdp"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/menuTextDisable"
+            android:textSize="@dimen/_12sdp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/save"
+            android:layout_width="0.0dip"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_weight="1.0"
+            android:background="@drawable/button_red_rectangle"
+            android:fontFamily="@font/pt_root_ui_medium"
+            android:gravity="center"
+            android:text="ثبت"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="0.0dip"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_weight="1.0"
+            android:background="@drawable/button_red_stroke_rectangle"
+            android:fontFamily="@font/pt_root_ui_medium"
+            android:gravity="center"
+            android:text="لغو"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,99 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'org.jetbrains.kotlin.android'
+
+android {
+    namespace 'com.mati.game'
+    compileSdkVersion 34
+    buildToolsVersion "34.0.0"
+
+    buildFeatures{
+        viewBinding true
+    }
+
+
+    compileOptions {
+       // sourceCompatibility 1.8
+        //targetCompatibility 1.8
+    }
+
+    lint {
+        baseline = file("lint-baseline.xml")
+    }
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 28
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        applicationId "com.mati.game"
+        versionName "Persian MT"
+        versionCode 5
+        vectorDrawables.useSupportLibrary = true
+
+        multiDexEnabled = true
+
+        ndk {
+            abiFilters 'armeabi-v7a'
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'com.tuyenmonkey:mkloader:1.4.0'
+    implementation group: 'org.ini4j', name: 'ini4j', version: '0.5.4'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation "com.github.skydoves:colorpickerpreference:2.0.4"
+    implementation 'ru.egslava:MaskedEditText:1.0.5'
+    implementation 'androidx.activity:activity:1.9.0'
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.github.Triggertrap:SeekArc:v1.1'
+    implementation 'com.akexorcist:round-corner-progress-bar:2.1.2'
+    implementation 'com.dinuscxj:circleprogressbar:1.3.6'
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    implementation 'com.mindorks.android:prdownloader:0.6.0'
+    implementation 'com.google.firebase:firebase-database:20.0.4'
+    implementation 'com.google.firebase:firebase-analytics:21.2.0'
+    implementation 'com.google.firebase:firebase-messaging:23.2.0'
+    implementation 'com.github.hzy3774:AndroidP7zip:v1.7.2'
+    implementation 'com.hzy:un7zip:1.7.1'
+    implementation 'com.github.smarteist:autoimageslider:1.4.0'
+    implementation platform('com.google.firebase:firebase-bom:29.2.1')
+    implementation 'com.liulishuo.filedownloader:library:1.7.7'
+
+    implementation "com.tonyodev.fetch2:fetch2:3.0.12"
+    implementation "com.tonyodev.fetch2okhttp:fetch2okhttp:3.0.12"
+    implementation 'org.apache.commons:commons-lang3:3.12.0'
+
+    // glide =>
+    implementation 'com.github.bumptech.glide:glide:4.13.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.13.0'
+
+    implementation 'jp.wasabeef:glide-transformations:4.3.0'
+
+    implementation 'jp.co.cyberagent.android:gpuimage:2.1.0'
+
+    // neoMorphism =>
+    implementation 'com.github.fornewid:neumorphism:0.3.0'
+
+    // swipe =>
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+
+    // server =>
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+
+
+    // navigation =>
+    implementation "androidx.navigation:navigation-fragment-ktx:2.5.3"
+    implementation "androidx.navigation:navigation-ui-ktx:2.5.3"
+
+    implementation 'com.mikhaellopez:circularprogressbar:3.1.0'
+}

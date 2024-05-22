@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dw_root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layoutDirection="ltr"
+    android:background="@drawable/background_window_red"
+    android:orientation="vertical"
+    android:paddingTop="12dp"
+    android:paddingBottom="16dp"
+    android:visibility="visible">
+
+    <TextView
+        android:id="@+id/dw_caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:singleLine="true"
+        android:text="Caption"
+        android:textColor="#ffffffff"
+        android:textSize="11sp" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/dw_scroll_info"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="0.5"
+        android:overScrollMode="never"
+        android:scrollbarThumbHorizontal="@android:color/transparent"
+        android:scrollbarThumbVertical="@android:color/transparent"
+        android:scrollbarTrackHorizontal="@android:color/transparent"
+        android:scrollbarTrackVertical="@android:color/transparent"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/dw_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/muller_regular"
+            android:lineSpacingExtra="3sp"
+            android:text="Info\10Info\10Info\10Info\10Info\10Info\10Info\10Info\10Info\10Info\10Info\10Info\10Info\10Info\10Info\10Info\10Info\10Info\10Info\10Info\10Info\10"
+            android:textColor="#ffffff"
+            android:textSize="10sp" />
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/dw_scroll_root"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="0.5"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/dw_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:fontFamily="@font/muller_bold"
+                android:text="Info Info Info"
+                android:textColor="#ffffff"
+                android:textSize="11sp"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:fontFamily="@font/muller_bold"
+                android:text="Info Info Info"
+                android:textColor="#ffffff"
+                android:textSize="11sp"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:fontFamily="@font/muller_bold"
+                android:text="Info Info Info"
+                android:textColor="#ffffff"
+                android:textSize="11sp"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_weight="0.25"
+                android:fontFamily="@font/muller_bold"
+                android:text="Info Info Info"
+                android:textColor="#ffffff"
+                android:textSize="11sp"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/dw_divider"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/br_list_active"
+            android:visibility="visible" />
+
+        <ScrollView
+            android:id="@+id/dw_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadeScrollbars="false"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:scrollbarStyle="outsideInset"
+            android:scrollbarThumbVertical="@drawable/br_dialog_scroll_thumb"
+            android:scrollbarTrackVertical="@drawable/br_dialog_scroll_track">
+
+            <LinearLayout
+                android:id="@+id/dw_scroll_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:scrollbarStyle="insideOverlay">
+
+                <TextView
+                    android:id="@+id/dw_list_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/br_list_inactive"
+                    android:fontFamily="@font/muller_bold"
+                    android:gravity="left|center_vertical|center_horizontal|center"
+                    android:paddingLeft="14dp"
+                    android:paddingTop="7dp"
+                    android:paddingRight="14dp"
+                    android:paddingBottom="7dp"
+                    android:text="Button"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="11sp" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <com.nvidia.devtech.CustomEditText
+        android:id="@+id/dw_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/background_br_input"
+        android:ems="10"
+        android:fontFamily="@font/muller_regular"
+        android:gravity="left"
+        android:hint="برای ورود کلیک کنید"
+        android:imeOptions="actionSend|flagNoFullscreen|flagNoExtractUi"
+        android:inputType="text"
+        android:longClickable="true"
+        android:paddingLeft="14dp"
+        android:paddingTop="6dp"
+        android:paddingRight="14dp"
+        android:paddingBottom="6dp"
+        android:singleLine="true"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textSize="13sp"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/dw_root_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/dw_button_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_br_red"
+            android:fontFamily="@font/muller_bold"
+            android:minWidth="100dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="OK"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="13sp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/dw_button_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_br_red_unfilled"
+            android:fontFamily="@font/muller_bold"
+            android:minWidth="100dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="13sp"
+            android:visibility="visible" />
+    </LinearLayout>
+</LinearLayout>

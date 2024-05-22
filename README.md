@@ -10,6 +10,27 @@ BG_URL = "Background Image"<br/>
 Data add path : \app\src\main\java\com\mati\game\core\config(Class)
 ---
 
+## 🌐 Socials:
+[![Discord](https://img.shields.io/badge/Discord-%237289DA.svg?logo=discord&logoColor=white)](https://discord.gg/mr_mati) [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/mati_mdy) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/mahdi-mhammadi-298879260) 
+
+# 💫 Images:
+
+<h3 align="center">Xiaomi Calcultor App</h3>
+<p align="center">
+  <img src="https://biaupload.com/do.php?imgf=org-1e8458bc23da1.png" alt="android" width="86" height="64"/>
+</p>
+
+<p align="center">
+  <img src="https://biaupload.com/do.php?imgf=org-031d1669aa512.jpg" alt="android" width="360" height="620"/>
+  <img src="https://biaupload.com/do.php?imgf=org-0956d73e465a3.jpg" alt="android" width="620" height="360"/>
+  <img src="https://biaupload.com/do.php?imgf=org-43d78b9530024.jpg" alt="android" width="620" height="360"/>
+</p>
+
+<p align="left">
+</p>
+
+#
+
 # 💻 Tech Stack:
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white) ![Kotlin](https://img.shields.io/badge/kotlin-%230095D5.svg?style=for-the-badge&logo=kotlin&logoColor=white) ![ANDROID](https://img.shields.io/badge/android-%2320232a.svg?style=for-the-badge&logo=android&logoColor=%a4c639) ![Adobe Photoshop](https://img.shields.io/badge/adobephotoshop-%2331A8FF.svg?style=for-the-badge&logo=adobephotoshop&logoColor=white)
 ---

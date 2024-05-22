@@ -1,6 +1,5 @@
 # 💫 Config:
-
-# . The following data will beb remove form the project (as constants)
+. The following data will beb remove form the project (as constants)
 VERSION_CODE = 3;<br/>
 VERSION_CODE_DATA = "2.0.2"<br/>
 BASE_URL = "api call url"<br/>

@@ -15,7 +15,7 @@ Data add path : \app\src\main\java\com\mati\game\core\config(Class)
 
 # 💫 Images:
 
-<h3 align="center">Xiaomi Calcultor App</h3>
+<h3 align="center">Persian Mobile</h3>
 <p align="center">
   <img src="https://biaupload.com/do.php?imgf=org-1e8458bc23da1.png" alt="android" width="86" height="64"/>
 </p>

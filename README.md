@@ -8,7 +8,7 @@ DOWNLOAD_URL = "Link Download Data"<br/>
 UPDATE_URL = "Link Update Data" <br/>
 BG_URL = "Background Image"<br/>
 
-# . Data add path : \app\src\main\java\com\mati\game\core\config(Class)
+Data add path : \app\src\main\java\com\mati\game\core\config(Class)
 ---
 
 # 💻 Tech Stack:

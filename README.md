@@ -17,13 +17,13 @@ Data add path : \app\src\main\java\com\mati\game\core\config(Class)
 
 <h3 align="center">Persian Mobile</h3>
 <p align="center">
-  <img src="https://biaupload.com/do.php?imgf=org-1e8458bc23da1.png" alt="android" width="86" height="64"/>
+  <img src="https://biaupload.com/do.php?imgf=org-1e8458bc23da1.png" alt="android" width="86" height="86"/>
 </p>
 
 <p align="center">
   <img src="https://biaupload.com/do.php?imgf=org-031d1669aa512.jpg" alt="android" width="360" height="620"/>
-  <img src="https://biaupload.com/do.php?imgf=org-0956d73e465a3.jpg" alt="android" width="620" height="360"/>
-  <img src="https://biaupload.com/do.php?imgf=org-43d78b9530024.jpg" alt="android" width="620" height="360"/>
+  <img src="https://biaupload.com/do.php?imgf=org-0956d73e465a3.jpg" alt="android" width="620" height="260"/>
+  <img src="https://biaupload.com/do.php?imgf=org-43d78b9530024.jpg" alt="android" width="620" height="260"/>
 </p>
 
 <p align="left">

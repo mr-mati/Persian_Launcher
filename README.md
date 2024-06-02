@@ -23,8 +23,8 @@ align="center" src="https://biaupload.com/do.php?imgf=org-1e8458bc23da1.png" alt
 
 <p align="center">
   <img src="https://biaupload.com/do.php?imgf=org-031d1669aa512.jpg" alt="android" width="360" height="620"/>
-  <img src="https://biaupload.com/do.php?imgf=org-0956d73e465a3.jpg" alt="android" width="620" height="260"/>
-  <img src="https://biaupload.com/do.php?imgf=org-43d78b9530024.jpg" alt="android" width="620" height="260"/>
+  <img src="https://biaupload.com/do.php?imgf=org-0956d73e465a3.jpg" alt="android" width="620" height="160"/>
+  <img src="https://biaupload.com/do.php?imgf=org-43d78b9530024.jpg" alt="android" width="620" height="160"/>
 </p>
 
 <p align="left">

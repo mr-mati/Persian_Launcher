@@ -1,10 +1,3 @@
-<img
-  align="right"
-  src="https://user-images.githubusercontent.com/65187002/144930161-2f783401-8d27-4fdf-a2f7-cc0ba32f1f1f.gif"
-  width="100%"
-  height="100%"
-  style="display: outline"
-/>
 # 💫 Config:
 . The following data will beb remove form the project (as constants)<br/>
 VERSION_CODE = 3;<br/>
@@ -24,6 +17,12 @@ Data add path : \app\src\main\java\com\mati\game\core\config(Class)
 
 <h3 align="center">Persian Mobile</h3>
 <p align="center">
+<img
+  align="right"
+  src="https://user-images.githubusercontent.com/65187002/144930161-2f783401-8d27-4fdf-a2f7-cc0ba32f1f1f.gif"
+  width="100%"
+  style="display: outline"
+/>
   <img src="https://biaupload.com/do.php?imgf=org-1e8458bc23da1.png" alt="android" width="86" height="86"/>
 </p>
 

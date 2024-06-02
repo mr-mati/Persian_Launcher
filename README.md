@@ -24,6 +24,12 @@ Data add path : \app\src\main\java\com\mati\game\core\config(Class)
   style="display: inline"
 />
   <img src="https://biaupload.com/do.php?imgf=org-1e8458bc23da1.png" alt="android" width="86" height="86"/>
+<img
+  align="right"
+  src="https://user-images.githubusercontent.com/65187002/144930161-2f783401-8d27-4fdf-a2f7-cc0ba32f1f1f.gif"
+  width="30%"
+  style="display: inline"
+/>
 </p>
 
 <p align="center">
